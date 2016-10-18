@@ -1,0 +1,40 @@
+img{
+  height: 150px;
+  width: 200px;
+  display: block;
+  margin-bottom: 5px;
+}
+.photos{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+button, label, input{
+  display: block;
+  margin-top: 5px;
+}
+#photos{
+  display: block;
+  margin-top: 10px;
+}
+#register, #login{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+#register{
+  margin-right: 20px;
+}
+#session{
+  display: block;
+}
+.errors{
+  color: red;
+}

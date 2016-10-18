@@ -1,0 +1,20 @@
+<div id="session" ng-include="'partials/user/session.html'"></div>
+
+<h1>Add a new Photo</h1>
+
+<a href="#/photo">All photos</a>
+
+  <label>Add a photo:</label>
+  <input type="file" file-input="files">
+  <label>Select a Subject:</label>
+  <select  ng-model="newPhoto.subject">
+    <option value='' disabled selected>Please Choose</option>
+    <option ng-value="s.name" ng-repeat="s in subjects" ng-bind="s.name"></option>
+  </select>
+  <label>Or add a new one:</label>
+  <input ng-model="newPhoto.subject">
+  <button ng-click="uploadFiles()">Upload</button>
+
+<div ng-show="errors" ng-repeat="error in errors">
+  <div class="errors" ng-bind="error"></div>
+</div>

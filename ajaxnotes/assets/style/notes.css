@@ -1,0 +1,25 @@
+label, .create{
+  display: block;
+  margin: 10px 0px 5px; 
+}
+
+#id, #title, #content, #date, #action{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#id{
+  width: 70px;
+}
+#title{
+  width: 150px;
+}
+#content{
+  width: 180px;
+}
+#date{
+  width: 120px;
+}
+#action{
+  width: 70px;
+}

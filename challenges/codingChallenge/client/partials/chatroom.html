@@ -1,0 +1,36 @@
+<!-- <div id="Add a Chatroom">
+  <input type="text" name="chatroom">
+  <button type="submit">Add</button>
+</div>
+<div id="users"></div>
+<div id="chatrooms"></div>
+<div id="currentChatrooms"></div> -->
+
+
+  <label>Your Name</label>
+  <input type="text" ng-model="newUser.name">
+  <button type="submit" ng-click="addUser()">Join!</button>
+
+  <br><br>
+
+  <label>Add Chatroom</label>
+  <input type="text" ng-model="chatroomCtrl.newChatroom.name">
+  <button type="submit" ng-click="chatroomCtrl.addChatroom()">Add!</button>
+
+  <h3>People:</h3>
+  <ul ng-repeat="user in allUsers">
+    <li ng-bind="user.user"></li>
+    <li><input type="text" ng-model="newMessage.message"></li>
+    <li><button ng-click="privateChat(user.user, newMessage.message)">Chat!</button></li>
+  </ul>
+
+  <h3>Chatrooms:</h3>
+  <ul ng-repeat="room in chatroomCtrl.allChatrooms track by $index">
+    <li ng-bind="room"></li>
+    <li><button ng-click="chatroomCtrl.joinChatroom(room)">Join Chatroom!</button></li>
+  </ul>
+
+  <h3>Private Chats:</h3>
+  <ul ng-repeat="chats in privateChats">
+    <li ng-bind="chats"></li>
+  </ul>

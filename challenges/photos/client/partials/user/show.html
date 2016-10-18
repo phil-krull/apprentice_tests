@@ -1,0 +1,15 @@
+<div id="session" ng-include="'partials/user/session.html'"></div>
+
+<h1>{{ user.first_name }} {{ user.last_name }} has loaded these pictures</h1>
+<a href="#/create">Add photos</a> | <a href="#/photo">All photos</a>
+
+<div id="photos" ng-show="user.photos">
+  <div class="photos" ng-repeat="p in user.photos">
+    <img ng-src="./images/{{p.img}}">
+    <p>See all: <a href="#/show/{{ p._subject._id }}">{{ p._subject.name }}</a></p>
+    <p>Total likes: {{ p.likes.length }}</p>
+    <button ng-hide="p.userLikes" ng-click="like(p._id)">Like</button>
+    <button ng-show="p.userLikes" ng-click="dislike(p._id)">Dislike</button>
+  </div>
+</div>
+

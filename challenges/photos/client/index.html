@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Photos</title>
+  <script type="text/javascript" src="./source/angular.js"></script>
+  <script type="text/javascript" src="./source/angular-route.js"></script>
+  <script type="text/javascript" src="./source/angular-cookies.js"></script>
+  <script type="text/javascript" src="./javascript/main.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/users/u_newController.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/users/u_showController.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/photos/p_indexController.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/photos/p_newController.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/photos/p_showController.js"></script>
+  <script type="text/javascript" src="./javascript/factories/userFactory.js"></script>
+  <script type="text/javascript" src="./javascript/factories/photoFactory.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+  <div id="container" ng-app="myApp">
+    <h1>Welcome to the Photo App</h1>
+    <div ng-view=""></div>
+  </div>
+</body>
+</html>

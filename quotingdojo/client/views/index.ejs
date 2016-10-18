@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Quoting Dojo</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Welcome to the quoting dojo</h1>
+    <a href="/quotes">Add a New Quote</a>
+    <% if(quotes){
+      for(q in quotes){ %>
+        <p><%= quotes[q]['name'] %> said: <a href="/quotes/edit/<%= quotes[q]['id'] %>"><%= quotes[q]['quote'] %></a> on: <%= quotes[q]['createdAt'] %>.</p>
+        <form action="/quotes/<%= quotes[q]['id'] %>" method="post">
+          <button type="submit">Delete</button>
+        </form>
+      <% }
+    } %>
+  </div>
+</body>
+</html>

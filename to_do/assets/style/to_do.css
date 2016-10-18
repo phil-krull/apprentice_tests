@@ -1,0 +1,4 @@
+.right, .left{
+  display: inline-block;
+  vertical-align: top;
+}

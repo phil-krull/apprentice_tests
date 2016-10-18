@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+}
+h1{
+  color: green;
+}
+.row{
+  display: inline-block;
+}
+.row div{
+  width: 20px;
+  height: 20px;
+}
+.brick{
+  background-color: blue;
+}
+.coin{
+  background: url('coin.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.empty{
+
+}
+#game{
+  position: relative;
+}
+#pacman{
+  background: url('pacman.gif');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+#score{
+  color: white;
+  border: 2px solid green;
+  height: 20px;
+  width: 30px;
+  text-align: center;
+  padding: 3px;
+}
